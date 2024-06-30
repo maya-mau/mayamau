@@ -1,6 +1,6 @@
 @font-face {
     font-family: NoeDisplay;
-    src: url("/Users/mayam/Home/fonts/NoeDisplay-Black.ttf") format("truetype");
+    src: url("fonts/NoeDisplay-Black.ttf") format("truetype");
 }
 
 BODY {
