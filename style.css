@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NoeDisplay;
+    src: url("/Users/mayam/Home/fonts/NoeDisplay-Black.ttf") format("truetype");
+}
+
 BODY {
     font-family: monospace;
     font-size:  medium;
@@ -22,8 +27,8 @@ BODY {
 }
 
 H1 { 
-    font-family: monospace;
-    font-size: xx-large;
+    font-family: 'NoeDisplay', san-serif;
+    font-size: xxx-large;
     color: #436850; 
 }
 
