@@ -3,8 +3,13 @@
     src: url("fonts/NoeDisplay-Black.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: ApercuMono;
+    src: url("/fonts/FontsFree-Net-ApercuMono.ttf") format("truetype");
+}
+
 BODY {
-    font-family: monospace;
+    font-family: ApercuMono;
     font-size:  medium;
     width: auto;
     background-color: #F9EFDB;
