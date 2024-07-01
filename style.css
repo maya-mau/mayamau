@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: ApercuMono;
-    src: url("/fonts/FontsFree-Net-ApercuMono.ttf") format("truetype");
+    src: url("fonts/FontsFree-Net-ApercuMono.ttf") format("truetype");
 }
 
 BODY {
