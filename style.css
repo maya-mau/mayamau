@@ -4,12 +4,12 @@
 }
 
 @font-face {
-    font-family: ApercuMono;
+    font-family: 'ApercuMono';
     src: url("fonts/FontsFree-Net-ApercuMono.ttf") format("truetype");
 }
 
 BODY {
-    font-family: ApercuMono;
+    font-family: 'ApercuMono';
     font-size:  medium;
     width: auto;
     background-color: #F9EFDB;
