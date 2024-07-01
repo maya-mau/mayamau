@@ -18,7 +18,7 @@ BODY {
     margin-left: 0px;
     margin-right: 0px;
     border-left: 0px;
-    border-top: 20px solid #12372A;
+    /* border-top: 20px solid #12372A; */
     border-bottom: 20px solid #12372A;
     margin-top: 3ex;
 }
@@ -84,4 +84,54 @@ p {
 #right {
     width: 50%;
     float: right;
+}
+
+.nav-button {
+    border: none;
+    background: #F9EFDB;
+    padding-left: none;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    border-bottom: 10px solid #12372A;
+    padding-bottom: 12px;
+}
+
+nav a {
+    float: right;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    background-color: #436850;
+}
+
+hr {
+    color: #12372A;
+    width: 100;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.col-150px-fixed {
+    width: 150px;
+}
+
+.col-flex {
+    flex-grow: 1;
 }
