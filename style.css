@@ -10,15 +10,10 @@
 
 BODY {
     font-family: 'ApercuMono';
-    font-size:  medium;
+    font-size: medium;
     width: auto;
     background-color: #F9EFDB;
-    padding-top: 20px;
     padding-left: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-left: 0px;
-    /* border-top: 20px solid #12372A; */
     border-bottom: 20px solid #12372A;
     margin-top: 3ex;
 }
@@ -51,10 +46,11 @@ H3 {
 }
 
 figure {
-    display: table;
+    display: flex;
+    width: 100%;
     border: 0px #cccccc solid;
-    padding: 10px;
-    margin: auto;
+    margin: 0px;
+    padding: 0 px;
 }
   
 figcaption {
@@ -66,11 +62,19 @@ figcaption {
     font-size: small;
     padding: 10px;
     text-align: center;
+} 
+
+.responsive {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 p {
-    margin-right: 10px;
-}
+    margin-right: 0px;
+    margin-block-start: 0px;
+    padding-bottom: 1px;
+} 
   
 .clear {
     clear: both;
@@ -84,6 +88,7 @@ p {
 #right {
     width: 50%;
     float: right;
+    margin-left: 10px;
 }
 
 .nav-button {
@@ -124,8 +129,15 @@ hr {
 .container {
     display: grid;
     grid-template-columns: 150px 1fr;
-    width: 100%;
+    width: 95%;
     height: 100%;
+    
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .col-150px-fixed {
@@ -134,4 +146,36 @@ hr {
 
 .col-flex {
     flex-grow: 1;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: center;
+    
+}
+
+.add-line {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .container-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #left, #right {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .responsive {
+        width: 100%;
+        max-width: 100%;
+        
+    }
 }
